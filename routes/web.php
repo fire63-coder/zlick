@@ -40,4 +40,14 @@ Route::get('/productdetails',[CustomerController::class,'show'])->name('customer
 Route::get('/searchproduct',[CustomerController::class,'searchproduct'])->name('customer.searchproduct');
 
 //Admin controller
-Route::get('/administrator',[AdminController::class,'dashboard'])->name('admin.dashboard');
+Route::get('/admin',[AdminController::class,'dashboard'])->name('admin.dashboard');
+Route::get('/admin/settings',[AdminController::class,'settings'])->name('admin.settings');
+Route::get('/admin/shop/size', [AdminController::class,'size'])->name('admin.size');
+Route::get('/admin/shop/color', [AdminController::class,'color'])->name('admin.color');
+Route::get('/admin/shop/country', [AdminController::class,'country'])->name('admin.country');
+Route::get('/admin/shop/shipping', [AdminController::class,'shipping'])->name('admin.shipping');
+Route::get('/admin/shop/toplevel', [AdminController::class,'toplevel'])->name('admin.toplevel');
+Route::get('/admin/shop/midlevel', [AdminController::class,'midlevel'])->name('admin.midlevel');
+Route::get('/admin/shop/endlevel', [AdminController::class,'endlevel'])->name('admin.endlevel');
+Route::get('/admin/productmanagement', [AdminController::class,'productmanagement'])->name('admin.productmanagement');
+Route::get('/admin/ordermanagement', [AdminController::class,'ordermanagement'])->name('admin.order');
