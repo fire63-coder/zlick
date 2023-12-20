@@ -119,7 +119,7 @@ class CustomerController extends Controller
     {
         $data=[
           'title'=>'Product category - zlick',
-          'description'=>'Find here some product shown by categories',
+          'description'=>'Find here some product shown by category',
         ];
         return view('customer.category',$data);
     }
@@ -127,7 +127,7 @@ class CustomerController extends Controller
     {
         $data=[
           'title'=>'Product category - zlick',
-          'description'=>'Find here some product shown by categories',
+          'description'=>'Find here some product shown by category',
         ];
         return view('customer.productdetails',$data);
     }
@@ -135,7 +135,7 @@ class CustomerController extends Controller
     {
         $data=[
           'title'=>'Product by category - zlick',
-          'description'=>'Find here some product shown by categories',
+          'description'=>'Find here some product shown by category',
         ];
         return view('customer.productbycategory',$data);
     }
@@ -143,7 +143,7 @@ class CustomerController extends Controller
     {
         $data=[
           'title'=>'Search product - zlick',
-          'description'=>'Find here some product shown by categories',
+          'description'=>'Find here some product shown by category',
         ];
         return view('customer.searchproduct',$data);
     }

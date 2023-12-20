@@ -7,7 +7,7 @@
                   <h1>View Sizes</h1>
                </div>
                <div class="content-header-right">
-                  <a href="size-add.php" class="btn btn-primary btn-sm">Add New</a>
+                  <a href="{{route('admin.add_size')}}" class="btn btn-primary btn-sm">Add New</a>
                </div>
             </section>
             <section class="content">

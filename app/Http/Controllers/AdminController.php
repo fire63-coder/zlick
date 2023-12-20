@@ -29,8 +29,25 @@ class AdminController extends Controller
             'title'=>'Size - zlick',
             'description'=>'Look up your activity!',
         ];
-        return view('admin.size',$data);
+        return view('admin.sizes.size',$data);
     }
+    public function add_size()
+    {
+        $data=[
+            'title'=>'Add Size - zlick',
+            'description'=>'Look up your activity!',
+        ];
+        return view('admin.sizes.addsize',$data);
+    }
+    public function edit_size()
+    {
+        $data=[
+            'title'=>'Add Size - zlick',
+            'description'=>'Look up your activity!',
+        ];
+        return view('admin.sizes.editsize',$data);
+    }
+
     public function color()
     {
         $data=[
@@ -39,14 +56,47 @@ class AdminController extends Controller
         ];
         return view('admin.color',$data);
     }
+    public function add_color()
+    {
+        $data=[
+            'title'=>'Color - zlick',
+            'description'=>'Update you stuffs colors!',
+        ];
+        return view('admin.colors.addcolor',$data);
+    }
+    public function edit_color()
+    {
+        $data=[
+            'title'=>'Color - zlick',
+            'description'=>'Update you stuffs colors!',
+        ];
+        return view('admin.colors.editcolor',$data);
+    }
     public function country()
     {
         $data=[
             'title'=>'Country - zlick',
             'description'=>'Look up your activity!',
         ];
-        return view('admin.country',$data);
+        return view('admin.countries.country',$data);
     }
+    public function add_country()
+    {
+        $data=[
+            'title'=>'Country - zlick',
+            'description'=>'Look up your activity!',
+        ];
+        return view('admin.countries.addcountry',$data);
+    }
+    public function edit_country()
+    {
+        $data=[
+            'title'=>'Country - zlick',
+            'description'=>'Look up your activity!',
+        ];
+        return view('admin.countries.editcountry',$data);
+    }
+
     public function shipping()
     {
         $data=[
@@ -55,31 +105,7 @@ class AdminController extends Controller
         ];
         return view('admin.shipping',$data);
     }
-    public function toplevel()
-    {
-        $data=[
-            'title'=>'TOP LEVEL - zlick',
-            'description'=>'Look up your activity!',
-        ];
-        return view('admin.toplevel',$data);
-    }
-    public function midlevel()
-    {
-        $data=[
-            'title'=>'MID Category - zlick',
-            'description'=>'Look up your activity!',
-        ];
-        return view('admin.midlevel',$data);
-    }
-    public function endlevel()
-    {
-        $data=[
-            'title'=>'END Category - zlick',
-            'description'=>'Look up your activity!',
-        ];
-        return view('admin.endlevel',$data);
-    }
-    public function productmanagement()
+  public function productmanagement()
     {
         $data=[
             'title'=>'END Category - zlick',
@@ -102,5 +128,69 @@ class AdminController extends Controller
             'description'=>'Look up your activity!',
         ];
         return view('admin.slider',$data);
+    }
+    public function service()
+    {
+        $data=[
+            'title'=>'Service - zlick',
+            'description'=>'Look up your services!',
+        ];
+        return view('admin.services.service',$data);
+    }
+    public function add_service()
+    {
+        $data=[
+            'title'=>'Service - zlick',
+            'description'=>'Add service!',
+        ];
+        return view('admin.services.add-service',$data);
+    }
+    public function faq()
+    {
+        $data=[
+            'title'=>'FAQ - zlick',
+            'description'=>'Look up your faq!',
+        ];
+        return view('admin.faq.faq',$data);
+    }
+    public function addfaq()
+    {
+        $data=[
+            'title'=>'ADD FAQ - zlick',
+            'description'=>'Look up your faq!',
+        ];
+        return view('admin.faq.addfaq',$data);
+    }
+    public function customer()
+    {
+        $data=[
+            'title'=>'customer - zlick',
+            'description'=>'Look up your faq!',
+        ];
+        return view('admin.customer',$data);
+    }
+    public function page()
+    {
+        $data=[
+            'title'=>'Page - zlick',
+            'description'=>'Look up your faq!',
+        ];
+        return view('admin.page',$data);
+    }
+    public function social()
+    {
+        $data=[
+            'title'=>'Social - zlick',
+            'description'=>'Look up your social!',
+        ];
+        return view('admin.social',$data);
+    }
+public function subscriber()
+    {
+        $data=[
+            'title'=>'Subscriber - zlick',
+            'description'=>'Look up your social!',
+        ];
+        return view('admin.subscriber',$data);
     }
 }

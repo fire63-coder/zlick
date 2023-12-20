@@ -31,7 +31,7 @@
                 </ul>
             </li>
             <li class="treeview ">
-                <a href="{{route('admin.productmanagement')}}">
+                <a href="{{route('admin.product')}}">
                     <i class="fa fa-shopping-bag"></i> <span>{{__('Product Management')}}</span>
                 </a>
             </li>
@@ -41,38 +41,38 @@
                 </a>
             </li>
             <li class="treeview ">
-                <a href="slider.php">
+                <a href="{{route('admin.slider')}}">
                     <i class="fa fa-picture-o"></i> <span>Manage Sliders</span>
                 </a>
             </li>
             <!-- Icons to be displayed on Shop -->
             <li class="treeview ">
-                <a href="service.php">
+                <a href="{{route('admin.service')}}">
                     <i class="fa fa-list-ol"></i> <span>Services</span>
                 </a>
             </li>
             <li class="treeview ">
-                <a href="faq.php">
+                <a href="{{route('admin.faq')}}">
                     <i class="fa fa-question-circle"></i> <span>FAQ</span>
                 </a>
             </li>
             <li class="treeview ">
-                <a href="customer.php">
+                <a href="{{route('admin.customer')}}">
                     <i class="fa fa-user-plus"></i> <span>Registered Customer</span>
                 </a>
             </li>
             <li class="treeview ">
-                <a href="page.php">
+                <a href="{{route('admin.page')}}">
                     <i class="fa fa-tasks"></i> <span>Page Settings</span>
                 </a>
             </li>
             <li class="treeview ">
-                <a href="social-media.php">
+                <a href="{{route('admin.social')}}">
                     <i class="fa fa-globe"></i> <span>Social Media</span>
                 </a>
             </li>
             <li class="treeview ">
-                <a href="subscriber.php">
+                <a href="{{route('admin.subscriber')}}">
                     <i class="fa fa-hand-o-right"></i> <span>Subscriber</span>
                 </a>
             </li>
