@@ -69,15 +69,19 @@ Route::get('/admin/shop/edit-midlevel', [CategoryController::class,'edit_midleve
 Route::get('/admin/shop/edit-endlevel', [CategoryController::class,'edit_endlevel'])->name('admin.edit_endlevel');
 
 Route::get('/admin/ordermanagement', [AdminController::class,'ordermanagement'])->name('admin.order');
+Route::get('/admin/editprofile', [AdminController::class,'edit_profile'])->name('admin.edit_profile');
 
 Route::get('/admin/slider', [AdminController::class,'slider'])->name('admin.slider');
 Route::get('/admin/add-slider', [AdminController::class,'add_slider'])->name('admin.add_slider');
-Route::get('/admin/edit-slider', [AdminController::class,'edit_slider'])->name('admin.add_slider');
+Route::get('/admin/edit-slider', [AdminController::class,'edit_slider'])->name('admin.edit_slider');
 
 Route::get('/admin/service', [AdminController::class,'service'])->name('admin.service');
-Route::get('/admin/add-service', [AdminController::class,'add_service'])->name('admin.add-service');
+Route::get('/admin/add-service', [AdminController::class,'add_service'])->name('admin.add_service');
+
 Route::get('/admin/faq', [AdminController::class,'faq'])->name('admin.faq');
-Route::get('/admin/addfaq', [AdminController::class,'addfaq'])->name('admin.addfaq');
+Route::get('/admin/add-faq', [AdminController::class,'add_faq'])->name('admin.add_faq');
+Route::get('/admin/edit-faq', [AdminController::class,'edit'])->name('admin.edit_faq');
+
 Route::get('/admin/customer', [AdminController::class,'customer'])->name('admin.customer');
 Route::get('/admin/page', [AdminController::class,'page'])->name('admin.page');
 Route::get('/admin/social', [AdminController::class,'social'])->name('admin.social');

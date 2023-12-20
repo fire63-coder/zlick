@@ -19,10 +19,10 @@
                     <ul class="dropdown-menu">
                         <li class="user-footer">
                             <div>
-                                <a href="profile-edit.php" class="btn btn-default btn-flat">{{__('Edit Profile')}}</a>
+                                <a href="{{route('admin.edit_profile')}}" class="btn btn-default btn-flat">{{__('Edit Profile')}}</a>
                             </div>
                             <div>
-                                <a href="logout.php" class="btn btn-default btn-flat">{{__('Log out')}}</a>
+                                <a href="{{route('customer.logout')}}" class="btn btn-default btn-flat">{{__('Log out')}}</a>
                             </div>
                         </li>
                     </ul>

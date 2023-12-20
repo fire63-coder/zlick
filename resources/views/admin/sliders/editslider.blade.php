@@ -21,7 +21,7 @@
                                 <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Existing Photo</label>
                                     <div class="col-sm-9" style="padding-top:5px">
-                                        <img src="../assets/uploads/slider-1.png" alt="Slider Photo" style="width:400px;">
+                                        <img src="{{asset('backend/uploads/slider-1.png')}}" alt="Slider Photo" style="width:400px;">
                                     </div>
                                 </div>
                                 <div class="form-group">

@@ -23,6 +23,14 @@ class AdminController extends Controller
         ];
         return view('admin.settings',$data);
     }
+    public function edit_profile()
+    {
+        $data=[
+            'title'=>'Profile - zlick',
+            'description'=>'Look up your activity!',
+        ];
+        return view('admin.editprofile',$data);
+    }
     public function size()
     {
         $data=[
@@ -54,7 +62,7 @@ class AdminController extends Controller
             'title'=>'Color - zlick',
             'description'=>'Update you stuffs colors!',
         ];
-        return view('admin.color',$data);
+        return view('admin.colors.color',$data);
     }
     public function add_color()
     {
@@ -105,14 +113,6 @@ class AdminController extends Controller
         ];
         return view('admin.shipping',$data);
     }
-  public function productmanagement()
-    {
-        $data=[
-            'title'=>'END Category - zlick',
-            'description'=>'Look up your activity!',
-        ];
-        return view('admin.productmanagement',$data);
-    }
     public function ordermanagement()
     {
         $data=[
@@ -124,10 +124,26 @@ class AdminController extends Controller
     public function slider()
     {
         $data=[
-            'title'=>'END Category - zlick',
+            'title'=>'SLIDER - zlick',
             'description'=>'Look up your activity!',
         ];
-        return view('admin.slider',$data);
+        return view('admin.sliders.slider',$data);
+    }
+    public function add_slider()
+    {
+        $data=[
+            'title'=>'ADD SLIDER - zlick',
+            'description'=>'Look up your activity!',
+        ];
+        return view('admin.sliders.addslider',$data);
+    }
+    public function edit_slider()
+    {
+        $data=[
+            'title'=>'SLIDER Edit - zlick',
+            'description'=>'Look up your activity!',
+        ];
+        return view('admin.sliders.editslider',$data);
     }
     public function service()
     {
@@ -143,7 +159,7 @@ class AdminController extends Controller
             'title'=>'Service - zlick',
             'description'=>'Add service!',
         ];
-        return view('admin.services.add-service',$data);
+        return view('admin.services.addservice',$data);
     }
     public function faq()
     {
@@ -153,7 +169,7 @@ class AdminController extends Controller
         ];
         return view('admin.faq.faq',$data);
     }
-    public function addfaq()
+    public function add_faq()
     {
         $data=[
             'title'=>'ADD FAQ - zlick',
@@ -161,13 +177,21 @@ class AdminController extends Controller
         ];
         return view('admin.faq.addfaq',$data);
     }
+    public function edit_faq()
+    {
+        $data=[
+            'title'=>'ADD FAQ - zlick',
+            'description'=>'Look up your faq!',
+        ];
+        return view('admin.faq.editfaq',$data);
+    }
     public function customer()
     {
         $data=[
             'title'=>'customer - zlick',
             'description'=>'Look up your faq!',
         ];
-        return view('admin.customer',$data);
+        return view('admin.registercustomer',$data);
     }
     public function page()
     {
@@ -185,7 +209,7 @@ class AdminController extends Controller
         ];
         return view('admin.social',$data);
     }
-public function subscriber()
+    public function subscriber()
     {
         $data=[
             'title'=>'Subscriber - zlick',

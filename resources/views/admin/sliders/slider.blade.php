@@ -7,7 +7,7 @@
                       <h1>View Sliders</h1>
                    </div>
                    <div class="content-header-right">
-                      <a href="slider-add.php" class="btn btn-primary btn-sm">Add Slider</a>
+                      <a href="{{route('admin.add_slider')}}" class="btn btn-primary btn-sm">Add Slider</a>
                    </div>
                 </section>
                 <section class="content">
@@ -31,7 +31,7 @@
                                   <tbody>
                                      <tr>
                                         <td>1</td>
-                                        <td style="width:150px;"><img src="../assets/uploads/slider-1.png" alt="Welcome to Ecommerce PHP" style="width:140px;"></td>
+                                        <td style="width:150px;"><img src="{{asset('backend/uploads/slider-1.png')}}" alt="Welcome to Ecommerce PHP" style="width:140px;"></td>
                                         <td>Welcome to Ecommerce PHP</td>
                                         <td>Shop Online for Latest Women Accessories</td>
                                         <td>View Women Accessories</td>
@@ -44,7 +44,7 @@
                                      </tr>
                                      <tr>
                                         <td>2</td>
-                                        <td style="width:150px;"><img src="../assets/uploads/slider-2.jpg" alt="50% Discount on All Products" style="width:140px;"></td>
+                                        <td style="width:150px;"><img src="{{asset('backend/uploads/slider-2.jpg')}}" alt="50% Discount on All Products" style="width:140px;"></td>
                                         <td>50% Discount on All Products</td>
                                         <td>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has.</td>
                                         <td>Read More</td>
@@ -57,7 +57,7 @@
                                      </tr>
                                      <tr>
                                         <td>3</td>
-                                        <td style="width:150px;"><img src="../assets/uploads/slider-3.png" alt="24 Hours Customer Support" style="width:140px;"></td>
+                                        <td style="width:150px;"><img src="{{asset('backend/uploads/slider-3.png')}}" alt="24 Hours Customer Support" style="width:140px;"></td>
                                         <td>24 Hours Customer Support</td>
                                         <td>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has.</td>
                                         <td>Read More</td>

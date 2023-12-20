@@ -7,7 +7,7 @@
                             <h1>View Top Level Categories</h1>
                         </div>
                         <div class="content-header-right">
-                            <a href="top-category-add.php" class="btn btn-primary btn-sm">Add New</a>
+                            <a href="{{route('admin.add_toplevel')}}" class="btn btn-primary btn-sm">Add New</a>
                         </div>
                     </section>
                     <section class="content">

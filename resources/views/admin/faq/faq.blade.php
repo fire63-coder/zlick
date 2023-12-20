@@ -7,7 +7,7 @@
                 <h1>View FAQs</h1>
             </div>
             <div class="content-header-right">
-                <a href="{{route('admin.addfaq')}}" class="btn btn-primary btn-sm">Add FAQ</a>
+                <a href="{{route('admin.add_faq')}}" class="btn btn-primary btn-sm">Add FAQ</a>
             </div>
         </section>
         <section class="content">

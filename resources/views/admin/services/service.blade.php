@@ -7,7 +7,7 @@
                 <h1>View Services</h1>
             </div>
             <div class="content-header-right">
-                <a href="{{route('admin.addservice')}}" class="btn btn-primary btn-sm">Add Service</a>
+                <a href="{{route('admin.add_service')}}" class="btn btn-primary btn-sm">Add Service</a>
             </div>
         </section>
         <section class="content">
@@ -28,7 +28,7 @@
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td style="width:130px;"><img src="../assets/uploads/service-5.png" alt="Easy Returns" style="width:120px;"></td>
+                                    <td style="width:130px;"><img src="{{asset('backend/uploads/service-5.png')}}" alt="Easy Returns" style="width:120px;"></td>
                                     <td>Easy Returns</td>
                                     <td>Return any item before 15 days!</td>
                                     <td>
@@ -38,7 +38,7 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td style="width:130px;"><img src="../assets/uploads/service-6.png" alt="Free Shipping" style="width:120px;"></td>
+                                    <td style="width:130px;"><img src="{{asset('backend/uploads/service-6.png')}}" alt="Free Shipping" style="width:120px;"></td>
                                     <td>Free Shipping</td>
                                     <td>Enjoy free shipping inside US.</td>
                                     <td>
@@ -48,7 +48,7 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td style="width:130px;"><img src="../assets/uploads/service-7.png" alt="Fast Shipping" style="width:120px;"></td>
+                                    <td style="width:130px;"><img src="{{asset('backend/uploads/service-7.png')}}" alt="Fast Shipping" style="width:120px;"></td>
                                     <td>Fast Shipping</td>
                                     <td>Items are shipped within 24 hours.</td>
                                     <td>
@@ -58,7 +58,7 @@
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td style="width:130px;"><img src="../assets/uploads/service-8.png" alt="Satisfaction Guarantee" style="width:120px;"></td>
+                                    <td style="width:130px;"><img src="{{asset('backend/uploads/service-8.png')}}" alt="Satisfaction Guarantee" style="width:120px;"></td>
                                     <td>Satisfaction Guarantee</td>
                                     <td>We guarantee you with our quality satisfaction.</td>
                                     <td>
@@ -68,7 +68,7 @@
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td style="width:130px;"><img src="../assets/uploads/service-9.png" alt="Secure Checkout" style="width:120px;"></td>
+                                    <td style="width:130px;"><img src="{{asset('backend/uploads/service-9.png')}}" alt="Secure Checkout" style="width:120px;"></td>
                                     <td>Secure Checkout</td>
                                     <td>Providing Secure Checkout Options for all</td>
                                     <td>
@@ -78,7 +78,7 @@
                                 </tr>
                                 <tr>
                                     <td>6</td>
-                                    <td style="width:130px;"><img src="../assets/uploads/service-10.png" alt="Money Back Guarantee" style="width:120px;"></td>
+                                    <td style="width:130px;"><img src="{{asset('backend/uploads/service-10.png')}}" alt="Money Back Guarantee" style="width:120px;"></td>
                                     <td>Money Back Guarantee</td>
                                     <td>Offer money back guarantee on our products</td>
                                     <td>
