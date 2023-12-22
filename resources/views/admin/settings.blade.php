@@ -34,7 +34,11 @@
                             </ul>
                             <div class="tab-content">
                                <div class="tab-pane active" id="tab_1">
-                                  <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                                  <form class="form-horizontal" action="{{ $company ? route('update_logo',$company->id ):route('save_logo')}}" method="post" enctype="multipart/form-data">
+                                    @csrf
+                                    @if ($company)
+                                        @method('PUT')
+                                    @endif
                                      <div class="box box-info">
                                         <div class="box-body">
                                            <div class="form-group">
@@ -46,13 +50,13 @@
                                            <div class="form-group">
                                               <label for="" class="col-sm-2 control-label">{{__('New Photo')}}</label>
                                               <div class="col-sm-6" style="padding-top:6px;">
-                                                 <input type="file" name="photo_logo">
+                                                 <input type="file" name="photo_logo" required>
                                               </div>
                                            </div>
                                            <div class="form-group">
                                               <label for="" class="col-sm-2 control-label"></label>
                                               <div class="col-sm-6">
-                                                 <button type="submit" class="btn btn-success pull-left" name="form1">{{__('Update Logo')}}</button>
+                                                 <button type="submit" class="btn btn-success pull-left" name="form1">{{ $company ? __('Update logo'): __('Save logo')}}</button>
                                               </div>
                                            </div>
                                         </div>
@@ -61,6 +65,10 @@
                                </div>
                                <div class="tab-pane" id="tab_2">
                                   <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                                    @csrf
+                                    {{-- @if ()
+                                       
+                                    @endif --}}
                                      <div class="box box-info">
                                         <div class="box-body">
                                            <div class="form-group">
@@ -72,13 +80,13 @@
                                            <div class="form-group">
                                               <label for="" class="col-sm-2 control-label">{{__('New Photo')}}</label>
                                               <div class="col-sm-6" style="padding-top:6px;">
-                                                 <input type="file" name="photo_favicon">
+                                                 <input type="file" name="photo_favicon" required>
                                               </div>
                                            </div>
                                            <div class="form-group">
                                               <label for="" class="col-sm-2 control-label"></label>
                                               <div class="col-sm-6">
-                                                 <button type="submit" class="btn btn-success pull-left" name="form2">{{__('Update Favicon')}}</button>
+                                                 <button type="submit" class="btn btn-success pull-left" name="form2">{{ $company ? __('Update Favicon'): __('Save Favicon')}}</button>
                                               </div>
                                            </div>
                                         </div>

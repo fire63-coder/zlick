@@ -15,14 +15,7 @@ class AdminController extends Controller
         ];
         return view('admin.dashboard',$data);
     }
-    public function settings()
-    {
-        $data=[
-            'title'=>'Settings - zlick',
-            'description'=>'Look up your activity!',
-        ];
-        return view('admin.settings',$data);
-    }
+    
     public function edit_profile()
     {
         $data=[

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -43,7 +44,14 @@ Route::get('/searchproduct',[CustomerController::class,'searchproduct'])->name('
 
 //Admin controller
 Route::get('/admin',[AdminController::class,'dashboard'])->name('admin.dashboard');
-Route::get('/admin/settings',[AdminController::class,'settings'])->name('admin.settings');
+
+Route::get('/admin/settings',[CompanyController::class,'settings'])->name('admin.settings');
+Route::get('/admin/settings/create-logo',[CompanyController::class,'create_logo'])->name('create_logo');
+Route::post('/admin/settings/save-logo',[CompanyController::class,'save_logo'])->name('save_logo');
+Route::put('/admin/settings/update-logo',[CompanyController::class,'update_logo'])->name('update_logo');
+
+
+
 Route::get('/admin/shop/size', [AdminController::class,'size'])->name('admin.size');
 Route::get('/admin/shop/add-size', [AdminController::class,'add_size'])->name('admin.add_size');
 Route::get('/admin/shop/edit-size', [AdminController::class,'edit_size'])->name('admin.edit_size');
